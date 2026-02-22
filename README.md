@@ -25,7 +25,7 @@ The cluster is designed for resilience using an embedded `etcd` datastore across
 
 ### 1. Hardware & Virtualization
 *   **AC Recovery**: Enabled "Restore on AC Power Loss" in BIOS for all physical nodes.
-*   **Provisioning**: Deployed 3 Ubuntu Server VMs with Cloud-Init and static IPs.
+*   **Provisioning**: Deployed 3 Ubuntu Server VMs with Cloud-Init and IP reservations.
 *   **Security**: Established passwordless SSH keys and `NOPASSWD` sudoers access.
 
 ### 2. Automated Installation
