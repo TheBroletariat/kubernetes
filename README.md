@@ -7,11 +7,10 @@ This repository contains the Infrastructure as Code (IaC) for my home lab Kubern
 The cluster consists of three virtualized nodes configured for High Availability (HA) using an embedded `etcd` datastore.
 
 
-| Node Name | Role | OS | IP Address |
-| :--- | :--- | :--- | :--- |
-| **magi01** | Control-Plane / Master | Ubuntu 22.04 | xxx.xxx.xxx.xxx |
-| **magi02** | Control-Plane / Master | Ubuntu 22.04 | xxx.xxx.xxx.xxx |
-| **magi03** | Control-Plane / Master | Ubuntu 22.04 | xxx.xxx.xxx.xxx |
+|Node Name	Role	Host OS (Physical)	Guest OS (VM)	IP Address
+magi01	Master	Proxmox VE 8.x	Ubuntu 22.04	xxx.xxx.xxx.xxx
+magi02	Master	Proxmox VE 8.x	Ubuntu 22.04	xxx.xxx.xxx.xxx
+magi03	Master	Proxmox VE 8.x	Ubuntu 22.04	xxx.xxx.xxx.xxx
 
 ## 🛠️ Technology Stack
 *   **Hypervisor**: [Proxmox VE](https://www.proxmox.com)
