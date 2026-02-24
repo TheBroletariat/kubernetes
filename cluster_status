@@ -2,3 +2,16 @@ NAME     STATUS   ROLES                       AGE    VERSION        INTERNAL-IP 
 magi01   Ready    control-plane,etcd,master   2d1h   v1.30.0+k3s1   <magi01_IP>  <none>        Debian GNU/Linux 12 (bookworm)   6.8.12-18-pve    containerd://1.7.15-k3s1
 magi02   Ready    control-plane,etcd,master   2d1h   v1.30.0+k3s1   <magi02_IP>   <none>        Debian GNU/Linux 12 (bookworm)   6.8.12-18-pve    containerd://1.7.15-k3s1
 magi03   Ready    control-plane,etcd,master   2d1h   v1.30.0+k3s1   <magi03_IP>   <none>        Debian GNU/Linux 12 (bookworm)   6.8.12-15-pve    containerd://1.7.15-k3s1
+
+#cluster health
+NAMESPACE     NAME                                      READY   STATUS      RESTARTS   AGE
+default       hello-magi-867655ccd6-vtz7d               1/1     Running     0          2d
+kube-system   coredns-576bfc4dc7-wdm78                  1/1     Running     0          2d1h
+kube-system   helm-install-traefik-2cp9g                0/1     Completed   1          2d1h
+kube-system   helm-install-traefik-crd-l4jxr            0/1     Completed   0          2d1h
+kube-system   local-path-provisioner-75bb9ff978-fxqhq   1/1     Running     0          2d1h
+kube-system   metrics-server-557ff575fb-nbbhb           1/1     Running     0          2d1h
+kube-system   svclb-traefik-0ca4db33-4cxlg              2/2     Running     0          2d1h
+kube-system   svclb-traefik-0ca4db33-fl8fl              2/2     Running     0          2d1h
+kube-system   svclb-traefik-0ca4db33-qvs4w              2/2     Running     0          2d1h
+kube-system   traefik-5fb479b77-4h8hc                   1/1     Running     0          2d1h
